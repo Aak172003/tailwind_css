@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<!-- h-screen  -> vw and vh-->
+
+<body class="bg-slate-500 grid place-content-center h-screen">
+    <h1 class=" text-4xl text-white">
+        Test Tailwind
+    </h1>
+
+    <!-- max-w-sm -> max-w is dependent on root width  -->
+
+    <div class=" p-6 max-w-sm mx-auto bg-white rounded-xl shadow-2xl flex items-center space-x-4 ">
+        <!-- <div class="">
+            <img
+                src="https://d6f6d0kpz0gyr.cloudfront.net/uploads/images/_1200x630_crop_center-center_82_none/tailwind-thumb.jpg?mtime=1609771799" />
+        </div> -->
+
+        <div>
+            <img class=" h-12 w-12" src="../tailwind_image.jpg" />
+        </div>
+        <div class="text-xl font-medium text-red-500">
+            <div class="bg-blue-300">Tailwind CSS
+                <p class="text-blue-500 text-base bg-red-300">Hi , Tailwind CSS , How r u ? </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tailwind - State  -->
+    <button class="bg-sky-500 text-center mt-2 text-white  text-2xl p-2 rounded-xl h-20
+    hover:bg-white hover:text-black dark:bg-red-400
+    ">Buy Now</button>
+
+
+
+    <!-- Responsive Design -->
+    <!-- sm: -> smaller and smaller se bde screen -->
+    <!-- md: -> medium screen and usse bde jitne bhei hai  -->
+
+
+    <!-- Tailwind follow mobile first Approach , means jo bhi mai css apply krunga , wo sbse phle mobile screen pr apply hoga , 
+    if we want change element configuration, so we focus on big big breakpoint 
+
+    sm-> sm se aage ke sb screen width pr apply hoga 
+    md-> md se upr ke sb screen pr apply hoga and sm ka jo apply hua hua hai , usko we can overwrite as well  -->
+
+
+    <div class="text-center my-4">
+        <p class="text-white text-3xl bg-red-500 p-4 md:text-green-600 sm:text-blue-600">
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
+
+</html>

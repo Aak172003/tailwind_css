@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Webpage Design</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-950 ">
+    <!-- Navbar -->
+
+    <!-- Kisi bhi devides pr rahu , width hamesha full chaiye uska  -->
+
+
+    <!-- 🌟🌟🌟🌟🌟🌟🌟🌟🌟 -->
+    <!-- 
+    block sm:hidden -> which means 
+    for mobile screen element will block 
+    sm screen se aage sbke lie hidden hai 
+    -->
+    <nav class="w-full h-14 bg-indigo-200 flex justify-between items-center
+    px-4 md:px-10
+    ">
+        <div class="text-2xl text-indigo-700 font-bold">PW Skill</div>
+        <ul class="md:flex gap-1 font-semibold hidden text-2xl ">
+            <li class="mx-[10px] cursor-pointer">Home</li>
+            <li class="mx-[10px] cursor-pointer">About Us</li>
+            <li class="mx-[10px] cursor-pointer">Contact Us</li>
+        </ul>
+
+
+        <!-- "hidden md:block" -> means mobile view me hidden and md ke aage sb screen size ke lie block  -->
+        <div class="hidden md:block p-2 bg-indigo-700 text-white rounded font-bold cursor-pointer text-xl">Login /
+            SignUp</div>
+
+        <div class="md:hidden">
+            <a class="text-5xl" href="#"> &#8801</a>
+        </div>
+    </nav>
+
+    <!-- Navbar Ends Here  -->
+
+
+    <!-- Hero Section -->
+    <header class="w-full h-auto">
+
+        <img class="w-full hidden md:block h-auto "
+            src="https://tse3.mm.bing.net/th?id=OIP.8Ku_ixtOlQGOmx0m2vYrEgHaEK&pid=Api&P=0&h=180" alt="web image" />
+        <Img class="w-full md:hidden h-auto "
+            src="https://i5.walmartimages.com/asr/199ab764-f112-4508-888c-86a1094624e8.17daf90b726900a539a8b9873fdea1f5.jpeg"
+            alt="mobile image " />
+
+    </header>
+    <!-- Hero Section Ends Here  -->
+
+
+    <!-- Our Student Section -->
+
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+
+        <!-- Text and Line -->
+        <div class="w-full h-auto flex flex-wrap flex-col items-center text-center">
+
+            <!-- 
+            text-3xl md:text-4xl -> mobile screen pr text 3xl hoga , 
+            mediym and mediumd screen se bde size ke lie , text 4xl ho jaega  -->
+
+            <p class="text-white font-bold text-3xl md:text-4xl">
+                "Pure Hardwork , No Shortcuts"</p>
+
+            <!-- w-[30%] -->
+            <div class="w-36 h-2 border-b-4 border-yellow-500 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+        </div>
+
+
+        <div class="w-full flex flex-wrap justify-evenly gap-10">
+            <div class="w-46 flex flex-col items-center mb-12 ">
+                <img class="h-40 w-40 rounded-full"
+                    src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg" />
+                <p class="text-white text-3xl font-bold">600+</p>
+                <p class="text-gray-500 text-2xl font-bold">Diffenet Course</p>
+            </div>
+
+            <div class="w-46 flex flex-col items-center mb-12 ">
+                <img class="h-40 w-40 rounded-full"
+                    src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg" />
+                <p class="text-white text-3xl font-bold">600+</p>
+                <p class="text-gray-500 text-2xl font-bold">Diffenet Course</p>
+            </div>
+            <div class="w-46 flex flex-col items-center mb-12 ">
+                <img class="h-40 w-40 rounded-full"
+                    src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg" />
+                <p class="text-white text-3xl font-bold">600+</p>
+                <p class="text-gray-500 text-2xl font-bold">Diffenet Course</p>
+            </div>
+            <div class="w-46 flex flex-col items-center mb-12 ">
+                <img class="h-40 w-40 rounded-full"
+                    src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg" />
+                <p class="text-white text-3xl font-bold">600+</p>
+                <p class="text-gray-500 text-2xl font-bold">Diffenet Course</p>
+            </div>
+            <div class="w-46 flex flex-col items-center mb-12 ">
+                <img class="h-40 w-40 rounded-full"
+                    src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg" />
+                <p class="text-white text-3xl font-bold">600+</p>
+                <p class="text-gray-500 text-2xl font-bold">Diffenet Course</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Our Student Section Ends Here -->
+
+
+    <!-- Our Footer Section Start Here  -->
+
+    <footer
+        class="w-full bg-gray-900 px-4 text-white pt-8 flex flex-col md:flex-row mb-10   md:justify-between md:px-12">
+        <div>
+            <img class="w-28 h-14"
+                src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg"
+                alt="pwskill.image" />
+            <p class="my-4">Email us : support@pwskills.com</p>
+            <img class="w-28 h-14"
+                src="https://thumbs.dreamstime.com/b/pw-logo-monogram-design-template-triangle-shape-circle-rounded-isolated-white-background-224512615.jpg"
+                alt="pwskill.image" />
+        </div>
+
+        <div>
+            <h2 class="font-bold text-xl mt-4">PW Skills </h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-500 rounded-2xl my-2"></div>
+            <div>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
+
+        </div>
+
+        <div>
+            <h2 class="font-bold text-xl mt-4">PW Skills </h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-500 rounded-2xl my-2"></div>
+            <div>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
+
+        </div>
+        <div>
+            <h2 class="font-bold text-xl mt-4">PW Skills </h2>
+            <div class="w-32 h-1 border-b-2 border-yellow-500 rounded-2xl my-2"></div>
+            <div>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

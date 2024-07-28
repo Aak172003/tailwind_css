@@ -1,0 +1,5 @@
+ 
+Height > width -> These type of devices called Portrait mode 
+  
+Height < width -> These type of devices called Landscape mode 
+ 

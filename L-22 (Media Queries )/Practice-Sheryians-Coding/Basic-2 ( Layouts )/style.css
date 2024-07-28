@@ -1,0 +1,49 @@
+* {
+  /* Initiall me bydefault have some margin and padding  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+Always more focus on absolute property as compared to flex  
+Because in absolute and relative some responsivess issue might be occur , 
+but if i go with the flex , so so many property exist so ,
+we never stuck on because of responsiveness 
+*/
+
+.parent {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(227, 236, 164);
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.child1 {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+}
+.child2 {
+  height: 500px;
+  width: 500px;
+  background-color: green;
+}
+
+.child3 {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}

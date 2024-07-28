@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 50px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.parent {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+}
+
+.daughter {
+  width: 50%;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.daughter img {
+  width: 450px;
+}
+
+.daughter a {
+  text-align: center;
+}
+.son {
+  width: 50%;
+  padding: 0 5%;
+  /* background-color: green; */
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Media Queries  */
+
+/* --------------------------------- FOR DESKTOP ---------------------------------- */
+
+/* at least 1024 hona chaiye kyuki ye sirf 1024 se aage walo ke lie hai */
+@media (min-width: 1024px) {
+  h1 {
+    color: green;
+    text-decoration: underline;
+  }
+  .parent p {
+    color: red;
+    background-color: aqua;
+    word-spacing: 10px;
+  }
+}
+/* --------------------------------- FOR TABLETS and IPAD ---------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    background-color: blanchedalmond;
+    color: blue;
+    word-spacing: 30px;
+  }
+}
+
+/* --------------------------------- FOR MOBILES ---------------------------------- */
+/* 0 to 768 ke beech  */
+@media (max-width: 768px) {
+  h1 {
+    color: #3498db;
+  }
+
+  .parent {
+    /* display: flex; */
+    display: block;
+  }
+  .daughter {
+    width: 100%;
+  }
+
+  .son {
+    width: 100%;
+  }
+
+  .daughter img {
+    width: 100%;
+    height: auto;
+    /* sb jgh se 10% padding le lega  */
+    padding: 5%;
+  }
+}
+
+/* 0 to 468 ke beech  */
+@media (max-width: 468px) {
+  .daughter img {
+    padding: 10%;
+    /* box-sizing: border-box; */
+  }
+}

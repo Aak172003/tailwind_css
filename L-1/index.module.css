@@ -1,0 +1,116 @@
+/* element selector */
+h1 {
+  color: brown;
+}
+
+h1:hover {
+  color: rgb(0, 0, 255);
+}
+
+/* Universal selector */
+/* * {
+  background-color: yellow;
+} */
+
+/* class selector */
+.para {
+  background-color: rgb(0, 0, 255);
+}
+
+/* id selector */
+
+/* pseudo class  */
+/* .para:hover {
+  font-size: 20px;
+  background-color: black;
+} */
+
+#btn {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* #btn:hover {
+  background-color: green;
+  color: black;
+  border-radius: 10px;
+} */
+
+/* Which means id has more specifity than class , 
+and class has more soecifuty than element  */
+
+/* #pa {
+  background-color: rgb(255, 0, 255);
+}
+
+.para {
+  background-color: blue;
+} */
+
+/* RGBA */
+
+.para {
+  color: red;
+  color: rgb(255, 0, 0);
+}
+
+.para {
+  color: rgb(0, 255, 0);
+  color: #00ff00;
+}
+
+/* rgba */
+/* a-> alpha value (opacity of color , means density of color ) belongs to 0 and 1 */
+
+.para {
+  /* color: rgba(0, 0, 0, 0.2); */
+  /* 0 -> means very low density , 1 means very high density */
+}
+
+/**  INTERVIEW QUESTIONS  
+/** ---------------------------------------- -->
+
+/*? 1: What is the difference between rgb() and rgba() color notations in CSS? */
+
+/* 
+rgb() notation specifies a color using the red, green, and blue channels without transparency.
+rgba() notation is an extension of rgb() and includes an additional alpha channel to specify transparency. It stands for "red, green, blue, alpha.  
+*/
+
+/*? 2: How can you make the text color of an element fully transparent using CSS? Provide an example. */
+
+.para {
+  /* color: rgba(255, 0, 0, 0); */
+  /* or  */
+  /* color: transparent; */
+}
+
+/*? 3: How can you set the text color of an element to match the current color of another CSS property within the same element? */
+
+/* This only work with -> text color not with background color */
+.hero-section {
+  color: rgb(137, 43, 226);
+}
+
+h1 {
+  color: currentColor;
+}
+.para {
+  color: currentColor;
+}
+
+/* 3: -----------------------------------------  */
+
+/* if we write same color #ffffff so we can write only 3 times #fff */
+
+/* And if we write 3 same number in # value , so it always make grey color execpt #fff -> because this always make white color  */
+
+.para {
+  color: #999;
+
+  color: #000000;
+  /* or  */
+  /* color: #000; */
+}

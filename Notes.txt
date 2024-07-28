@@ -1,0 +1,54 @@
+specificty Css
+
+inline > internal > external
+-------------------------------------------------------------
+
+generally we don't use inline css because if we give we can't be able to change new proepty, 
+because we know inline css has very high specificty 
+
+-------------------------------------------------------------
+
+Cascade means falling down 
+
+-------------------------------------------------------------
+
+class has more specificity than element selector
+
+id has more specifity than class 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

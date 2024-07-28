@@ -1,0 +1,107 @@
+* {
+  /* Initiall me bydefault have some margin and padding  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  /* Give font-size here , because of checking css rem unit property  */
+  font-size: 20px;
+}
+
+/* Pixels is always fixed */
+/* % parent ka kitna guda hai */
+
+#box {
+  /* height: 30%;
+  width: 30%; */
+  /* If i givr box ko 30% width and 30% height so , this take 30% 30% of my original window screen  */
+
+  height: 500px;
+  width: 500px;
+  background-color: crimson;
+  /* 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* .inner {
+  height: 40%;
+  width: 50%;
+  background-color: green;
+} */
+
+/* ----------------------- vw and vh -------------------- */
+
+.inner {
+  height: 300px;
+  width: 300px;
+
+  /* now the height and width depend on screen height and width  */
+
+  /* use vw (view port width) and vh (view port height) */
+  height: 50vh;
+  width: 50vw;
+  background-color: royalblue;
+}
+
+.text1 {
+  font-size: 7vw;
+}
+
+/* 
+vmax -> at one point when when height is greater than width , so font-size dependent on vh 
+vmin -> at one point when when width is greater than width , so font-size dependent on vw 
+ */
+.text2 {
+  /* font-size: 5vmax; */
+
+  font-size: 5vmin;
+}
+
+/* Only used for font-size , child font-size depend on parent font-size or child font-size depend on root-font-size */
+
+/* Em (em): em is a relative unit that is calculated based on the font size of the parent element.
+When you set an element's size in em, it's relative to the font size of its nearest parent with a specified font size. */
+
+#parent {
+  background-color: #dadada;
+  width: 50vw;
+
+  font-size: 20px;
+}
+
+h1 {
+  /* font-size: 50px; */
+
+  /* 5*50 -> 250px  */
+  font-size: 4em;
+}
+
+h2 {
+  /* font-size: 40px; */
+  font-size: 1em;
+}
+h3 {
+  /* font-size: 50px; */
+  font-size: 2em;
+}
+
+/* Root Em (rem): rem is also a relative unit like em, but it's based on the font size of the root (html) element.
+Using rem ensures that the size is consistent throughout the entire document, making it especially useful for responsive design. */
+
+/* same like any font s-ze would be dependent on root html font size , below is how i can give fot-size  */
+/* Set the base font-size on the root html element */
+/* html {
+  font-size: 16px;
+} */
+
+.rem_prop {
+  font-size: 2rem;
+}
