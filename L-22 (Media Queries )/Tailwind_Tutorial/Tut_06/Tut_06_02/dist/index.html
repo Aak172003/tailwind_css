@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1 class="text-3xl font-bold underline bg-green-500">
+        Hello world!
+    </h1> -->
+
+
+    <!-- Un-Equal Grid Layout -->
+
+    <!-- small screen -> 6 column -->
+    <!-- large screen -> 12 column -->
+    <div class="grid gap-4 m-4 sm:grid-cols-12">
+
+        <!-- 
+
+        This col span is used to create un-equal design
+        sm:col-span-4
+        sm:col-span-8 
+        -->
+        <div class="min-h-[100px] rounded-2xl bg-orange-500 shadow-xl sm:col-span-3 "></div>
+        <div class="min-h-[100px] rounded-2xl bg-green-500 shadow-xl sm:col-span-3 "></div>
+        <div class="min-h-[100px] rounded-2xl bg-orange-500 shadow-xl sm:col-span-3 "></div>
+        <div class="min-h-[100px] rounded-2xl bg-green-500 shadow-xl sm:col-span-3 "></div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+
+/* tailwind utilities se bhi phle kaam krta hai */
+
+.text-white {
+  background-color: aqua;
+}
+
+.install {
+  @apply hover:bg-blue-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center bg-yellow-600;
+}
+
+.download {
+  @apply hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center bg-green-600;
+}
+
+@tailwind utilities;
+
+text-white {
+  background-color: rgb(22, 255, 255);
+}
+
+.text-white {
+  background-color: black;
+  color: white;
+}
+
+/* If we want to apply tailwind utilies, 
+ so we can define things after which is more customisable */
+
+/* If we want ki utilities call ke bdd hamare class aply ho for , 
+overwrit tailwind inbuilt kaam krenge  
+
+
+*/
